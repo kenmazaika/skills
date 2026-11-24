@@ -1,0 +1,32 @@
+# Copy to ~/.config/personal-strategist/config.yaml and edit.
+charter:
+  goals: ~/notes/goals.md
+  intent_map: ~/notes/intent-map.md
+  work_map: ~/notes/work-map/INDEX.md
+  work_map_overview: ~/notes/work-map/SYSTEM-OVERVIEW.md
+
+run:
+  timezone: UTC
+  cadence: "0 3 * * *"
+  candidates: 5
+  context_window_days: 7
+  work_map_depth: 2          # records opened per run, max 4
+
+volume:
+  max_per_day: 1
+  target_per_week: 4-6       # zero is acceptable
+
+gate:
+  min_total: 20              # out of 25
+  min_dimension: 3
+  min_grounding: 4
+
+publish:
+  adapter: file              # orbit | file | none
+  file:
+    dir: ~/notes/strategy
+  orbit:
+    base_url: ""             # ORBIT_BASE_URL, e.g. https://orbit.example.com
+    token_env: ORBIT_TOKEN
+    category: Strategy
+  announce: ""               # optional channel id or webhook

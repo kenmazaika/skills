@@ -1,0 +1,30 @@
+# Copy to ~/.config/research-engine/config.yaml and edit.
+charter:
+  goals: ~/notes/goals.md            # what counts as a good question
+  intent_map: ~/notes/intent-map.md  # why the work exists (Stage A only)
+  work_map: ~/notes/work-map/INDEX.md
+
+run:
+  timezone: UTC                      # RESEARCH_TZ
+  stage_a_time: "01:00"
+  stage_b_time: "02:15"
+  lease_hours: 6                     # RESEARCH_LEASE_HOURS
+  max_attempts: 2                    # RESEARCH_MAX_ATTEMPTS
+
+research:
+  min_sources: 8
+  seek_contradictions: true
+
+editorial:
+  threshold: 80                      # weighted %
+  min_criterion: 3
+  min_evidence: 4
+
+publish:
+  adapter: file                      # orbit | file | none
+  file:
+    dir: ~/notes/research
+  orbit:
+    base_url: ""                     # ORBIT_BASE_URL, e.g. https://orbit.example.com
+    token_env: ORBIT_TOKEN
+    category: Research
