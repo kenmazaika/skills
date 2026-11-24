@@ -1,0 +1,13 @@
+name: denylist
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject host paths, names, product names, and secrets
+        run: tools/check-denylist.sh
