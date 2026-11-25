@@ -9,6 +9,9 @@ into a blog post.
 - **[research-engine](skills/research-engine/)** — a two-stage research loop. One process frames the
   question and writes a neutral brief; a second, isolated process researches it; a third scores the result
   and publishes only what clears the bar.
+- **[quick-wins](skills/quick-wins/)** — opportunity discovery for delegation. Reads an Intent Map and a Work
+  Map, investigates the live systems, and hands you at most one high-impact opportunity that needs one
+  approval instead of your afternoon. Sends nothing on a day with nothing worth doing.
 
 ## The idea
 

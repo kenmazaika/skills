@@ -1,0 +1,26 @@
+# Copy to ~/.config/quick-wins/config.yaml and edit.
+charter:
+  intent_map: ~/notes/intent-map.md      # where you are going
+  work_map: ~/notes/work-map/INDEX.md    # what you already have
+  work_map_overview: ~/notes/work-map/SYSTEM-OVERVIEW.md
+
+run:
+  timezone: UTC
+  cadence: "0 4 * * *"
+  max_recommendations: 1                 # a maximum, never a target
+  state: ~/.local/state/quick-wins/seen.json
+
+gate:
+  min_weighted: 80
+  min_impact: 4
+  max_attention: 2                       # 1 = one approval, 2 = one short answer
+  min_confidence: 3
+
+delivery:
+  adapter: report                        # orbit | report
+  orbit:
+    base_url: ""                         # ORBIT_BASE_URL
+    token_env: ORBIT_TOKEN
+    actions: ["Move to Work", "Not now"]
+  report:
+    dir: ~/notes/quick-wins              # where recommendations are written if Orbit is absent
